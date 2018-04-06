@@ -93,19 +93,19 @@
                 var value = element.glucose.getValueAsMmolPerL();
                 highchartsData[0].data.push([element.date.valueOf(), value]);
             }, this);
-            report.getSmoothRapidInsulin().forEach(function(element) {
+/*            report.getSmoothRapidInsulin().forEach(function(element) {
                 var value = element.units;
                 highchartsData[1].data.push([element.date.valueOf(), value]);
-            }, this);
-            report.getSmoothLongInsulin().forEach(function(element) {
+            }, this);*/
+/*            report.getSmoothLongInsulin().forEach(function(element) {
                 var value = element.units;
                 highchartsData[2].data.push([element.date.valueOf(), value]);
-            }, this);
+            }, this);*/
             report.food.forEach(function(element) {
                 var value = element.carbs;
                 highchartsData[3].data.push([element.date.valueOf(), (isNaN(value) ? 5 : value)]);
             }, this);
-            report.insulin.forEach(function(element) {
+/*            report.insulin.forEach(function(element) {
                 var value = element.units;
                 if (element.insulinType == 0) {
                     highchartsData[4].data.push([element.date.valueOf(), value]);
@@ -113,7 +113,7 @@
                 if (element.insulinType == 1) {
                     highchartsData[5].data.push([element.date.valueOf(), value]);
                 }
-            }, this);
+            }, this);*/
             highchartsData[6].data = [
                 [report.start.valueOf(), HIPO_LIMIT],
                 [report.end.valueOf(), HIPO_LIMIT]
