@@ -8,7 +8,8 @@
     "url": "git://github.com/nahog/freestyle-libre-parser-viewer.git"
   },
   "scripts": {
-    "postinstall": "typings install && tsc"
+    "postinstall": "typings install && tsc",
+    "start": "http-server"
   },
   "author": "Nicolas Padula <nahog@msn.com>",
   "license": "MIT",
@@ -19,5 +20,8 @@
     "moment": "^2.17.1",
     "typescript": "^2.1.5",
     "typings": "^2.1.0"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1"
   }
 }
