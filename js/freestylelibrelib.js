@@ -231,6 +231,7 @@ var Report = /** @class */ (function () {
 //        end = this.insulin[this.insulin.length - 1].date > end ? this.insulin[0].date : end;
         end = this.food[this.food.length - 1].date > end ? this.food[0].date : end;
         this.end = end;
+
     }
     /**
      * Generate a list of points with spreading the insulin value using a custom curve to estimate the insulin/minute (Based on NovoRapid)
