@@ -9,7 +9,7 @@
   },
   "scripts": {
     "postinstall": "typings install && tsc",
-    "start": "http-server"
+    "start": "http-server -c-1"
   },
   "author": "Nicolas Padula <nahog@msn.com>",
   "license": "MIT",
